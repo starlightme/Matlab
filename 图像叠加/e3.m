@@ -1,0 +1,10 @@
+clc;
+clear;
+I1=imread('tree.jpg');
+I2=imadd(I1,100);
+subplot(1,2,1);
+imshow(I1);
+title('原图');
+subplot(1,2,2);
+imshow(I2);
+title('增加亮度后的图像');
