@@ -2,7 +2,7 @@ clear;
 clc;
 a=imread('man.jpg');
 b=imread('rice.jpg');
-%Ô¤·ÖÅä±äÁ¿
+%é¢„åˆ†é…å˜é‡
 c=uint8(zeros(160,160));   
 for i=1:160
     for j=1:160
