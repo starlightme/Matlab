@@ -2,15 +2,18 @@ close all;
 clear all;
 clc;
 I=imread('LENA.bmp');
-imshow(I);
-[M,N]=size(I);
-%也可以选择不用接下的两行，直接复制，但是降低了效率
-J=zeros(M,N);
 I=im2double(I);
+subplot(1,2,1);
+imshow(I);
+title('原图');
+[M,N]=size(I);
+J=zeros(M,N);
 for i=1:M
     for j=1:N
-        J(i,j)=I(i,j);
+         J(i,j)=I(i,N+1-j);
     end
 end
-figure;
+subplot(1,2,2);
 imshow(J);
+title('镜像反转后');
+
